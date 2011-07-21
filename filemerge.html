@@ -1,0 +1,102 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"><!-- InstanceBegin template="/Templates/BasicTemplate.dwt" codeOutsideHTMLIsLocked="false" --> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>EndersPsyche.com</title>
+	<!-- InstanceEndEditable -->
+    
+    <meta name="description" content="">
+	<meta name="author" content="Bryan M. Allred">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <link rel="shortcut icon" href="image/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="stylesheet" href="css/style.css?v=2">
+	<link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">
+	<script src="js/libs/modernizr-1.7.min.js"></script>
+    
+	<!-- InstanceBeginEditable name="head" -->
+	<!-- InstanceEndEditable -->
+</head>
+
+<body>
+	
+<div id="container">
+    
+    	<!-- Header -->
+        <header>
+        	<h1>EndersPsyche.com</h1>
+        </header>
+        
+        <!-- Menu Container -->
+        <div class="menu">
+        	<div class="menu-item"><a id="home" href="index.html" title="Main">Main</a></div>
+        	<div class="menu-item"><a id="projects" href="projects.html" title="Programming">Programming</a></div>
+            <div class="menu-item"><a id="library" href="bookshelf.html" title="Library">Library</a></div>
+            <div class="menu-item"><a id="about" href="about.html" title="Bio">Bio</a></div>
+       	</div>
+        
+        <!-- Center Column (main content) -->
+        <div id="main" role="main">
+            <!-- InstanceBeginEditable name="content" -->
+            <h2>File Merge</h2>
+            
+            <p>
+            	<a href="download/source/FileMerge.zip" title="Download source code"><img class="download" src="image/down.png" alt="Download source code" />Source Code</a>
+            </p>
+            
+            <p>There a couple of reasons why this was developed.</p>
+            
+            <ol>
+            	<li>Our SQL Developer has a program to store all database objects in single
+                files. This allows for easier subversion control on an itemized level. From
+                there a full build script would be required on each new build but the
+                individual files were not used because it would take just as much time as 
+                piecing it together by hand.</li>
+                <li>One project I work on is an application suite with multiple projects
+                tied together but still separate. Each of these required their own change
+                logs, but there was a need to create one compiled version for the suite.</li>
+            </ol>
+            
+            <p>Thus spawned the file merge application. I know most of these problems can
+            be solved via command-line manipulation, but we also wanted to give ourselves
+            the ability to format file contents using templates (simple String.Format() works
+            for us).</p>
+            
+            <p style="text-align: center;">
+            	<img src="screenshot/FileMerge.png" alt="File Merge" />
+            </p>
+            
+            <p>The user can select either an entire directory or specific files. If a directory
+            is selected all subdirectories and associated files will be added to the merge
+            file (<span style="color: #F00; text-decoration: underline;">word of caution!</span>). I
+            did not include an easy template creation process and for now will have to add
+            them manually edit these in the settings XML file.</p>
+            
+            <!-- InstanceEndEditable -->
+        </div>
+        
+        <!-- Footer -->
+		<footer>
+        	&copy;&nbsp;2008 - 2011 All Rights Reserved
+        </footer>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
+	<!--[if lt IE 7 ]>
+	<script src="js/libs/dd_belatedpng.js"></script>
+	<script> DD_belatedPNG.fix('img, .png_bg');</script>
+	<![endif]-->
+</body>
+<!-- InstanceEnd --></html>
